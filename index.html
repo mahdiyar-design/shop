@@ -1,1 +1,166 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>یه مسئله خیلی مهم 😐</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Tahoma, sans-serif;
+            background: #f4f5f7;
+            color: #222;
+        }
+
+        .box {
+            width: 90%;
+            max-width: 430px;
+            background: white;
+            padding: 35px 25px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0,0,0,.08);
+            animation: appear .7s ease;
+        }
+
+        .emoji {
+            font-size: 65px;
+            margin-bottom: 15px;
+            animation: shake 1.5s infinite;
+        }
+
+        h1 {
+            font-size: 23px;
+            margin-bottom: 18px;
+        }
+
+        p {
+            color: #666;
+            line-height: 2;
+            font-size: 15px;
+        }
+
+        .btn {
+            margin-top: 25px;
+            border: none;
+            background: #222;
+            color: white;
+            padding: 13px 28px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            transform: scale(1.04);
+        }
+
+        #result {
+            display: none;
+            margin-top: 25px;
+            background: #f6f6f6;
+            padding: 18px;
+            border-radius: 15px;
+            line-height: 2;
+            font-size: 14px;
+            animation: appear .5s ease;
+        }
+
+        .small {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #999;
+        }
+
+        @keyframes shake {
+            0%,100% {
+                transform: rotate(0);
+            }
+
+            25% {
+                transform: rotate(-8deg);
+            }
+
+            75% {
+                transform: rotate(8deg);
+            }
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <div class="emoji">🫠</div>
+
+    <h1>خب... یه اشتباهی شد 😐</h1>
+
+    <p>
+        طبق بررسی‌های انجام شده توسط تیم تحقیقات،
+        مشخص شد که بنده یک مقدار زیادی سوتی دادم.
+    </p>
+
+    <button class="btn" onclick="sorry()">
+        مشاهده گزارش حادثه 😂
+    </button>
+
+    <div id="result">
+        نتیجه تحقیقات:
+        <br><br>
+
+        بنده رسماً اعلام می‌کنم که
+        <b>معذرت می‌خوام 😅</b>
+
+        <br><br>
+
+        قصد بدی هم در کار نبوده،
+        فقط مغز بنده اون لحظه تصمیم گرفته
+        همکاری نکنه 🗿
+
+        <br><br>
+
+        امیدوارم مورد بخشش واقع بشم؛
+        در غیر این صورت درخواست تجدیدنظر
+        ثبت خواهد شد 😂
+
+    </div>
+
+    <div class="small">
+        این صفحه توسط واحد «خاک بر سرم» ساخته شده است.
+    </div>
+
+</div>
+
+<script>
+    function sorry() {
+        document.getElementById("result").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
 
